@@ -24,8 +24,8 @@ parser = argparse.ArgumentParser("cifar")
 parser.add_argument('--dataset_path', type=str, default='/storage/data/classification_dataset_balanced/', help='location of the data corpus')
 parser.add_argument('--class_num', type=int, default=6, help='dataset class number')
 parser.add_argument('--patch_size', type=int, default=224, help='patch size')
-parser.add_argument('--batch_size', type=int, default=2, help='batch size')
-parser.add_argument('--workers', type=int, default=4, help='workers')
+parser.add_argument('--batch_size', type=int, default=64, help='batch size')
+parser.add_argument('--workers', type=int, default=8, help='workers')
 parser.add_argument('--learning_rate', type=float, default=0.025, help='init learning rate')
 parser.add_argument('--learning_rate_min', type=float, default=0.001, help='min learning rate')
 parser.add_argument('--momentum', type=float, default=0.9, help='momentum')
@@ -88,7 +88,7 @@ def main():
     momentum=args.momentum, 
     weight_decay=args.weight_decay)
 
-  dataset = DS.CODEBRIM(torch.cuda.is_available(),args)
+  dataset = DS.CODEBRIM(torch.cuda.is_available(), args)
 
   train_queue = dataset.train_loader
 
@@ -132,12 +132,12 @@ def train(train_queue, valid_queue, model, architect, criterion, optimizer, lr):
     model.train()
 
     input = Variable(input, requires_grad=False).cuda()
-    target = Variable(target, requires_grad=False).cuda()
+    target = Variable(target, requires_grad=False).cuda(non_blocking=True)
 
     # get a random minibatch from the search queue with replacement
     input_search, target_search = next(iter(valid_queue))
     input_search = Variable(input_search, requires_grad=False).cuda()
-    target_search = Variable(target_search, requires_grad=False).cuda()
+    target_search = Variable(target_search, requires_grad=False).cuda(non_blocking=True)
 
     architect.step(input, target, input_search, target_search, lr, optimizer, unrolled=args.unrolled)
 
@@ -178,13 +178,13 @@ def infer(valid_queue, model, criterion):
 
   for step, (input, target) in enumerate(valid_queue):
     input = Variable(input, volatile=True).cuda()
-    target = Variable(target, volatile=True).cuda()
+    target = Variable(target, volatile=True).cuda(non_blocking=True)
 
     logits = model(input)
     loss = criterion(logits, target)
-    output = torch.sigmoid(logits)
+    output_probs = torch.sigmoid(logits)
     # scale the loss by the ratio of the split batch size and the original
-    loss = criterion(output, target) * input.size(0) / float(args.batch_size)
+    loss = criterion(output_probs, target) * input.size(0) / float(args.batch_size)
 
     # update the 'losses' meter with the actual measure of the loss
     losses.update(loss.item() * args.batch_size / float(input.size(0)), input.size(0))
