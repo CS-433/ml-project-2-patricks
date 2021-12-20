@@ -1,0 +1,17 @@
+model,acc,param,model type,pretrain
+DenseNet,0.642,11.5,Expert designed,W/O Pretrain
+VGG-A,0.701,128.79,Expert designed,W/O Pretrain
+VGG-D,0.710,134.28,Expert designed,W/O Pretrain
+AlexNet,0.638,57.02,Expert designed,W/O Pretrain
+ResNet-50,0.627,23.5,Expert designed,W/O Pretrain
+ResNet-101,0.617,42.5,Expert designed,W/O Pretrain
+ENAS-1,0.681,4.68,NAS designed,W/O Pretrain
+ENAS-2,0.673,6.05,NAS designed,W/O Pretrain
+ENAS-3,0.678,2.75,NAS designed,W/O Pretrain
+EfficientNet-b0,0.641,4.02,NAS designed,W/O Pretrain
+ZenNas-1,0.695,5.43,NAS designed,W/O Pretrain
+ZenNAS-2,0.630,9.27,NAS designed,W/O Pretrain
+VGG-D,0.745,134.28,Expert designed,W/ Pretrain
+ResNet-50,0.752,23.5,Expert designed,W/ Pretrain
+EfficientNet-b0,0.742,4.02,NAS designed,W/ Pretrain
+ZenNAS-1,0.756,4.02,NAS designed,W/ Pretrain

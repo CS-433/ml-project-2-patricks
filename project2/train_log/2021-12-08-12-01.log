@@ -1,0 +1,45 @@
+[2021-12-08 12:01:07,847][line: 35] ==> creating ./train_log/2021-12-08-12-01.log
+[2021-12-08 12:01:09,876][line: 12] ==> batch_size:4
+[2021-12-08 12:01:09,883][line: 13] ==> patch_size:224
+[2021-12-08 12:01:09,886][line: 14] ==> learning rate high:0.01
+[2021-12-08 12:01:09,889][line: 15] ==> learning rate low:1e-05
+[2021-12-08 12:01:45,144][line: 35] ==> creating ./train_log/2021-12-08-12-01.log
+[2021-12-08 12:01:45,144][line: 35] ==> creating ./train_log/2021-12-08-12-01.log
+[2021-12-08 12:01:45,917][line: 12] ==> batch_size:4
+[2021-12-08 12:01:45,917][line: 12] ==> batch_size:4
+[2021-12-08 12:01:45,920][line: 13] ==> patch_size:224
+[2021-12-08 12:01:45,920][line: 13] ==> patch_size:224
+[2021-12-08 12:01:45,924][line: 14] ==> learning rate high:0.01
+[2021-12-08 12:01:45,924][line: 14] ==> learning rate high:0.01
+[2021-12-08 12:01:45,927][line: 15] ==> learning rate low:1e-05
+[2021-12-08 12:01:45,927][line: 15] ==> learning rate low:1e-05
+[2021-12-08 21:11:24,376][line: 35] ==> creating ./train_log/2021-12-08-21-11.log
+[2021-12-08 21:11:24,376][line: 35] ==> creating ./train_log/2021-12-08-21-11.log
+[2021-12-08 21:11:25,271][line: 12] ==> batch_size:4
+[2021-12-08 21:11:25,271][line: 12] ==> batch_size:4
+[2021-12-08 21:11:25,274][line: 13] ==> patch_size:224
+[2021-12-08 21:11:25,274][line: 13] ==> patch_size:224
+[2021-12-08 21:11:25,278][line: 14] ==> learning rate high:0.01
+[2021-12-08 21:11:25,278][line: 14] ==> learning rate high:0.01
+[2021-12-08 21:11:25,281][line: 15] ==> learning rate low:1e-05
+[2021-12-08 21:11:25,281][line: 15] ==> learning rate low:1e-05
+[2021-12-09 10:51:15,160][line: 35] ==> creating ./train_log/2021-12-09-10-51.log
+[2021-12-09 10:51:15,160][line: 35] ==> creating ./train_log/2021-12-09-10-51.log
+[2021-12-09 10:51:16,281][line: 12] ==> batch_size:4
+[2021-12-09 10:51:16,281][line: 12] ==> batch_size:4
+[2021-12-09 10:51:16,285][line: 13] ==> patch_size:224
+[2021-12-09 10:51:16,285][line: 13] ==> patch_size:224
+[2021-12-09 10:51:16,289][line: 14] ==> learning rate high:0.01
+[2021-12-09 10:51:16,289][line: 14] ==> learning rate high:0.01
+[2021-12-09 10:51:16,293][line: 15] ==> learning rate low:1e-05
+[2021-12-09 10:51:16,293][line: 15] ==> learning rate low:1e-05
+[2021-12-09 11:04:59,774][line: 35] ==> creating ./train_log/2021-12-09-11-04.log
+[2021-12-09 11:04:59,774][line: 35] ==> creating ./train_log/2021-12-09-11-04.log
+[2021-12-09 11:05:00,688][line: 12] ==> batch_size:4
+[2021-12-09 11:05:00,688][line: 12] ==> batch_size:4
+[2021-12-09 11:05:00,693][line: 13] ==> patch_size:224
+[2021-12-09 11:05:00,693][line: 13] ==> patch_size:224
+[2021-12-09 11:05:00,697][line: 14] ==> learning rate high:0.01
+[2021-12-09 11:05:00,697][line: 14] ==> learning rate high:0.01
+[2021-12-09 11:05:00,701][line: 15] ==> learning rate low:1e-05
+[2021-12-09 11:05:00,701][line: 15] ==> learning rate low:1e-05
