@@ -77,7 +77,7 @@ zennet_model_zoo = {
     'zennet_imagenet1k_flops400M_SE_res224': {
         'plainnet_str_txt': 'zennet_imagenet1k_flops400M_res224.txt',
         'pth_path': 'iccv2021_zennet_imagenet1k_flops400M_SE_res224/student_best-params_rank0.pth',
-        'num_classes': 6,
+        'num_classes': 1000,
         'use_SE': True,
         'resolution': 224,
         'crop_image_size': 320,
@@ -87,7 +87,7 @@ zennet_model_zoo = {
     'zennet_imagenet1k_flops600M_SE_res224': {
         'plainnet_str_txt': 'zennet_imagenet1k_flops600M_res224.txt',
         'pth_path': 'iccv2021_zennet_imagenet1k_flops600M_SE_res224/student_best-params_rank0.pth',
-        'num_classes': 6,
+        'num_classes': 1000,
         'use_SE': True,
         'resolution': 224,
         'crop_image_size': 320,
