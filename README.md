@@ -9,6 +9,14 @@ In this repository, you can find our work for the Project 2 of the [Machine Lear
 2. Further, We show that cross-domain transfer learning could greatly boost the model performance, under which the ZenNAS model achieves best multi-target accuracy and surpassed the best result from MetaQNN in the original CODEBRIM paper (from 72.2\% to 75.6\%) 
 3. We validate the performance gain using Grad-CAM to inspect attention pattern of last few convolutional layers, which shows that our transferred models' attention is better aligned with the defect area.
 
+## Result
+
+### Ablation study of **Convolutional layer attention**
+
+
+### Result of transform learning
+
+
 
 ## File structure of our project
 
@@ -28,9 +36,6 @@ In this repository, you can find our work for the Project 2 of the [Machine Lear
 ├── model_scripts\
 │   ├── hard_ZenNas_withPretrain.pth\
 │   ├── hard_ZenNas_withoutPretrain.pth\
-│   ├── zennet_imagenet1k_flops400M_res224.txt\
-│   ├── zennet_imagenet1k_flops600M_res224.txt\
-│   └── zennet_imagenet1k_flops900M_res224.txt\
 ├── sample\
 │   ├── defects\
 │   └── defects.xml\
@@ -44,8 +49,6 @@ In this repository, you can find our work for the Project 2 of the [Machine Lear
 │   ├── model_acc_param.csv\
 │   ├── pytorch_grad_cam\
 │   ├── result_analysis.ipynb\
-│   ├── result_comparison.html\
-│   ├── result_comparison.png\
 ├── README.md\
 ├── run_sample.ipynb\
 ├── ref_codes\
