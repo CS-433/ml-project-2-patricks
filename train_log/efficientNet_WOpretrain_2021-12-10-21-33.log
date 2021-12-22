@@ -1,0 +1,55 @@
+[2021-12-10 21:33:18,990][line: 35] ==> creating ./train_log/efficientNet_pretrain_2021-12-10-21-33.log
+[2021-12-10 21:33:19,765][line: 12] ==> batch_size:16
+[2021-12-10 21:33:19,769][line: 13] ==> patch_size:224
+[2021-12-10 21:33:19,772][line: 14] ==> learning rate high:0.01
+[2021-12-10 21:33:19,775][line: 15] ==> learning rate low:1e-05
+[2021-12-10 21:41:25,106][line: 81] ==> train Epoch:[280/300]	 loss=0.01060	 acc_hard=0.982 acc_soft=0.997 lr=0.0007982
+[2021-12-10 21:41:56,210][line: 81] ==> val Epoch:[280/300]	 loss=0.48905	 acc_hard=0.604 acc_soft=0.896 lr=0.0007982
+[2021-12-10 21:43:07,354][line: 81] ==> train Epoch:[281/300]	 loss=0.00993	 acc_hard=0.983 acc_soft=0.997 lr=0.0007462
+[2021-12-10 21:43:11,593][line: 81] ==> val Epoch:[281/300]	 loss=0.47804	 acc_hard=0.604 acc_soft=0.899 lr=0.0007462
+[2021-12-10 21:44:13,716][line: 81] ==> train Epoch:[282/300]	 loss=0.00864	 acc_hard=0.986 acc_soft=0.997 lr=0.0006957
+[2021-12-10 21:44:18,027][line: 81] ==> val Epoch:[282/300]	 loss=0.47402	 acc_hard=0.604 acc_soft=0.898 lr=0.0006957
+[2021-12-10 21:45:20,646][line: 81] ==> train Epoch:[283/300]	 loss=0.01118	 acc_hard=0.980 acc_soft=0.996 lr=0.0006470
+[2021-12-10 21:45:25,013][line: 81] ==> val Epoch:[283/300]	 loss=0.48287	 acc_hard=0.617 acc_soft=0.900 lr=0.0006470
+[2021-12-10 21:46:27,450][line: 81] ==> train Epoch:[284/300]	 loss=0.00979	 acc_hard=0.984 acc_soft=0.997 lr=0.0005999
+[2021-12-10 21:46:31,723][line: 81] ==> val Epoch:[284/300]	 loss=0.47187	 acc_hard=0.614 acc_soft=0.901 lr=0.0005999
+[2021-12-10 21:47:33,261][line: 81] ==> train Epoch:[285/300]	 loss=0.00840	 acc_hard=0.987 acc_soft=0.998 lr=0.0005545
+[2021-12-10 21:47:37,462][line: 81] ==> val Epoch:[285/300]	 loss=0.47395	 acc_hard=0.614 acc_soft=0.901 lr=0.0005545
+[2021-12-10 21:48:39,002][line: 81] ==> train Epoch:[286/300]	 loss=0.00899	 acc_hard=0.984 acc_soft=0.997 lr=0.0005108
+[2021-12-10 21:48:43,226][line: 81] ==> val Epoch:[286/300]	 loss=0.48389	 acc_hard=0.610 acc_soft=0.899 lr=0.0005108
+[2021-12-10 21:49:44,565][line: 81] ==> train Epoch:[287/300]	 loss=0.00901	 acc_hard=0.986 acc_soft=0.997 lr=0.0004689
+[2021-12-10 21:49:48,974][line: 81] ==> val Epoch:[287/300]	 loss=0.47540	 acc_hard=0.614 acc_soft=0.901 lr=0.0004689
+[2021-12-10 21:50:51,074][line: 81] ==> train Epoch:[288/300]	 loss=0.00958	 acc_hard=0.983 acc_soft=0.997 lr=0.0004287
+[2021-12-10 21:50:55,291][line: 81] ==> val Epoch:[288/300]	 loss=0.47877	 acc_hard=0.617 acc_soft=0.900 lr=0.0004287
+[2021-12-10 21:51:56,780][line: 81] ==> train Epoch:[289/300]	 loss=0.00866	 acc_hard=0.985 acc_soft=0.997 lr=0.0003903
+[2021-12-10 21:52:01,231][line: 81] ==> val Epoch:[289/300]	 loss=0.47602	 acc_hard=0.615 acc_soft=0.899 lr=0.0003903
+[2021-12-10 21:53:03,298][line: 81] ==> train Epoch:[290/300]	 loss=0.00924	 acc_hard=0.986 acc_soft=0.997 lr=0.0003536
+[2021-12-10 21:53:07,655][line: 81] ==> val Epoch:[290/300]	 loss=0.47682	 acc_hard=0.619 acc_soft=0.899 lr=0.0003536
+[2021-12-10 21:54:09,289][line: 81] ==> train Epoch:[291/300]	 loss=0.01002	 acc_hard=0.983 acc_soft=0.997 lr=0.0003188
+[2021-12-10 21:54:13,629][line: 81] ==> val Epoch:[291/300]	 loss=0.47747	 acc_hard=0.612 acc_soft=0.900 lr=0.0003188
+[2021-12-10 21:55:15,757][line: 81] ==> train Epoch:[292/300]	 loss=0.00840	 acc_hard=0.985 acc_soft=0.997 lr=0.0002857
+[2021-12-10 21:55:20,082][line: 81] ==> val Epoch:[292/300]	 loss=0.47608	 acc_hard=0.617 acc_soft=0.900 lr=0.0002857
+[2021-12-10 21:56:22,117][line: 81] ==> train Epoch:[293/300]	 loss=0.01000	 acc_hard=0.983 acc_soft=0.997 lr=0.0002545
+[2021-12-10 21:56:26,560][line: 81] ==> val Epoch:[293/300]	 loss=0.46613	 acc_hard=0.619 acc_soft=0.900 lr=0.0002545
+[2021-12-10 21:57:28,980][line: 81] ==> train Epoch:[294/300]	 loss=0.00956	 acc_hard=0.984 acc_soft=0.997 lr=0.0002251
+[2021-12-10 21:57:33,409][line: 81] ==> val Epoch:[294/300]	 loss=0.47449	 acc_hard=0.617 acc_soft=0.900 lr=0.0002251
+[2021-12-10 21:58:35,604][line: 81] ==> train Epoch:[295/300]	 loss=0.00918	 acc_hard=0.986 acc_soft=0.997 lr=0.0001976
+[2021-12-10 21:58:39,893][line: 81] ==> val Epoch:[295/300]	 loss=0.47536	 acc_hard=0.614 acc_soft=0.900 lr=0.0001976
+[2021-12-10 21:59:41,178][line: 81] ==> train Epoch:[296/300]	 loss=0.00896	 acc_hard=0.984 acc_soft=0.997 lr=0.0001719
+[2021-12-10 21:59:45,678][line: 81] ==> val Epoch:[296/300]	 loss=0.48036	 acc_hard=0.617 acc_soft=0.899 lr=0.0001719
+[2021-12-10 22:00:47,385][line: 81] ==> train Epoch:[297/300]	 loss=0.01031	 acc_hard=0.983 acc_soft=0.997 lr=0.0001481
+[2021-12-10 22:00:51,600][line: 81] ==> val Epoch:[297/300]	 loss=0.47711	 acc_hard=0.617 acc_soft=0.900 lr=0.0001481
+[2021-12-10 22:01:53,627][line: 81] ==> train Epoch:[298/300]	 loss=0.00913	 acc_hard=0.984 acc_soft=0.997 lr=0.0001261
+[2021-12-10 22:01:57,950][line: 81] ==> val Epoch:[298/300]	 loss=0.47656	 acc_hard=0.619 acc_soft=0.900 lr=0.0001261
+[2021-12-10 22:03:00,386][line: 81] ==> train Epoch:[299/300]	 loss=0.00833	 acc_hard=0.986 acc_soft=0.997 lr=0.0001060
+[2021-12-10 22:03:04,786][line: 81] ==> val Epoch:[299/300]	 loss=0.47286	 acc_hard=0.619 acc_soft=0.901 lr=0.0001060
+[2021-12-10 22:04:07,680][line: 81] ==> train Epoch:[300/300]	 loss=0.00906	 acc_hard=0.985 acc_soft=0.997 lr=0.0000878
+[2021-12-10 22:04:12,160][line: 81] ==> val Epoch:[300/300]	 loss=0.47606	 acc_hard=0.620 acc_soft=0.901 lr=0.0000878
+[2021-12-10 22:04:13,334][line: 98] ==> hard:
+[2021-12-10 22:05:09,593][line: 136] ==> train: loss:0.06544 acc_soft:0.976 acc_hard:0.889
+[2021-12-10 22:05:13,704][line: 136] ==> val: loss:0.35601 acc_soft:0.908 acc_hard:0.644
+[2021-12-10 22:05:47,473][line: 136] ==> test: loss:0.31333 acc_soft:0.908 acc_hard:0.641
+[2021-12-10 22:05:48,417][line: 104] ==> soft:
+[2021-12-10 22:06:46,445][line: 136] ==> train: loss:0.06421 acc_soft:0.976 acc_hard:0.889
+[2021-12-10 22:06:50,634][line: 136] ==> val: loss:0.35601 acc_soft:0.908 acc_hard:0.644
+[2021-12-10 22:06:55,469][line: 136] ==> test: loss:0.31333 acc_soft:0.908 acc_hard:0.641

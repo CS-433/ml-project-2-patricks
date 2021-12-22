@@ -75,27 +75,34 @@ Notebook scripts for training models of [ResNet](https://pytorch.org/hub/pytorch
 
 ### `Data Augmentation`
 
-*data_analysis.ipynb* includes our code for analyzing data distribution and resolution.\
-*data_augmentation.ipynb* includes 9 methods that we used to transform the data, such as RandomHorizontalFlip, RandomVerticalFlip, RandomRotation, RandomResizedCrop, RandomPerspective, GaussianBlur, RandomAdjustSharpness, random_select, normalize.\
-*datasets.py* assists in reading data files.
+#### `data_analysis.ipynb`
+It includes our code for analyzing data distribution and resolution.\
+#### `datasets.py` 
+To modify the transforms used in the dataloader, it includes 9 methods, such as RandomHorizontalFlip, RandomVerticalFlip, RandomRotation, RandomResizedCrop, RandomPerspective, GaussianBlur, RandomAdjustSharpness, random_select and normalize.\
+#### `data_augmentation.ipynb` 
+In the training framework, we get data from dataloader that we modify in `datasets.py`\
+
 
 ### `model_scripts`
 
 Including model structure produced by ZenNas method and parameter weight files.
 
 ### `tools`
-
-*NAS_result_analysis.ipynb* is used for analyzing the result of NAS like Agent Searching Reward.\
-*ZenNas_example* includes functions for drawing and generating results in run_sample.ipynb.\
-*copy_balance.ipynb* is over-sampling method to address the problem of class imbalance.\
-*focal_loss.py* implements focal loss to address the problem of class imbalance.\
-*pytorch_grad_cam* is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).\
-*result_analysis* summarizes results and analyzes comprehensively with the accuracy rate and the number of model parameters.\
+#### `NAS_result_analysis.ipynb` 
+It is used for analyzing the result of NAS like Agent Searching Reward.\
+#### `ZenNas_example.py` 
+It includes functions for drawing and generating results in run_sample.ipynb.\
+#### `copy_balance.ipynb` 
+It is the over-sampling method to address the problem of class imbalance.\
+#### `focal_loss.py` 
+It implements focal loss to address the problem of class imbalance.\
+#### `pytorch_grad_cam` 
+It is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).\
+#### `result_analysis.py` 
+It summarizes results and analyzes comprehensively with the accuracy rate and the number of model parameters.\
 
 ### `ref_codes`
-
 Reference code from github etc. Like the code from the original paper and ZenNas code.
 
 ### `train_log`
-
-Part of our training log.
+It include almost all the training logs during our experiment as well as the tools to generate acc-loss curves during training.
