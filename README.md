@@ -17,4 +17,4 @@ To install the dataset, you can visit the web [here](https://zenodo.org/record/2
 
 
 
-In our case, a 16GB RTX5000 GPU would allow `batch_size=2`(which is small due to the large image size (224x224) of CODEBRIM dataset), so you can decrease the batch_size of CUDA out of memory :)
+In our case, a 16GB RTX5000 GPU would allow `batch_size=16`(which is small due to the large image size (224x224) of CODEBRIM dataset), so you can decrease the batch_size of CUDA out of memory :)
