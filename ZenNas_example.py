@@ -93,6 +93,81 @@ def get_random_sample():
     sample = iter(dataLoaders['sample']).next()
     return sample
 
+
+def show_attenttion(model, data):
+    from pytorch_grad_cam import GradCAM, \
+    ScoreCAM, \
+    GradCAMPlusPlus, \
+    AblationCAM, \
+    XGradCAM, \
+    EigenCAM, \
+    EigenGradCAM, \
+    LayerCAM, \
+    FullGrad
+    from pytorch_grad_cam import GuidedBackpropReLUModel
+    from pytorch_grad_cam.utils.image import show_cam_on_image, \
+        deprocess_image, \
+        preprocess_image
+    import torchvision.transforms as transforms
+    import cv2
+    import numpy as np
+
+    methods = \
+        {"gradcam": GradCAM,
+        "scorecam": ScoreCAM,
+        "gradcam++": GradCAMPlusPlus,
+        "ablationcam": AblationCAM,
+        "xgradcam": XGradCAM,
+        "eigencam": EigenCAM,
+        "eigengradcam": EigenGradCAM,
+        "layercam": LayerCAM,
+        "fullgrad": FullGrad}
+
+    toPILTransform = transforms.ToPILImage()
+    rgb_img = toPILTransform(data[0])#select the first image
+    rgb_img = np.float32(rgb_img) / 255
+
+
+    target_layers = [model._modules['module_list'][5]]
+        
+    # If None, returns the map for the highest scoring category.
+    # Otherwise, targets the requested category.
+    target_category = None
+
+    # Using the with statement ensures the context is freed, and you can
+    # recreate different CAM objects in a loop.
+    cam_algorithm = methods["gradcam++"]
+    with cam_algorithm(model=model,
+                        target_layers=target_layers,
+                        use_cuda=False) as cam:
+
+        # AblationCAM and ScoreCAM have batched implementations.
+        # You can override the internal batch size for faster computation.
+        cam.batch_size = 1
+
+        grayscale_cam = cam(input_tensor=data,
+                            target_category=target_category,
+                            aug_smooth=True,
+                            eigen_smooth=True)
+        
+        # Here grayscale_cam has only one image in the batch
+        grayscale_cam = grayscale_cam[0, :]
+
+        cam_image = show_cam_on_image(rgb_img, grayscale_cam, use_rgb=True)
+
+        # cam_image is RGB encoded whereas "cv2.imwrite" requires BGR encoding.
+        cam_image = cv2.cvtColor(cam_image, cv2.COLOR_RGB2BGR)
+
+    gb_model = GuidedBackpropReLUModel(model=model, use_cuda= False)
+    gb = gb_model(data, target_category=target_category)
+
+    cam_mask = cv2.merge([grayscale_cam, grayscale_cam, grayscale_cam])
+    cam_gb = deprocess_image(cam_mask * gb)
+    gb = deprocess_image(gb)
+    from PIL import Image 
+    image = Image.fromarray(cam_image)
+    image.show() 
+
 def get_sample(path = None):
     if not path:
         return get_random_sample()
