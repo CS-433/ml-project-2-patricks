@@ -1,50 +1,50 @@
 <Annotation>
-<Defect name="image_0000005_crop_0000001.png">
+    <Defect name="image_0000519_crop_0000001.png">
         <Background>0</Background>
         <Crack>0</Crack>
-        <Spallation>0</Spallation>
-        <Efflorescence>1</Efflorescence>
-        <ExposedBars>0</ExposedBars>
+        <Spallation>1</Spallation>
+        <Efflorescence>0</Efflorescence>
+        <ExposedBars>1</ExposedBars>
         <CorrosionStain>1</CorrosionStain>
     </Defect>
-    <Defect name="image_0000005_crop_0000002.png">
+    <Defect name="image_0000734_crop_0000001.png">
         <Background>0</Background>
         <Crack>0</Crack>
-        <Spallation>0</Spallation>
-        <Efflorescence>1</Efflorescence>
-        <ExposedBars>0</ExposedBars>
+        <Spallation>1</Spallation>
+        <Efflorescence>0</Efflorescence>
+        <ExposedBars>1</ExposedBars>
         <CorrosionStain>1</CorrosionStain>
     </Defect>
-    <Defect name="image_0000021_crop_0000001.png">
+    <Defect name="image_0000956_crop_0000001.png">
         <Background>0</Background>
         <Crack>0</Crack>
         <Spallation>0</Spallation>
-        <Efflorescence>1</Efflorescence>
+        <Efflorescence>0</Efflorescence>
+        <ExposedBars>1</ExposedBars>
+        <CorrosionStain>0</CorrosionStain>
+    </Defect>
+    <Defect name="image_0001188_crop_0000001.png">
+        <Background>0</Background>
+        <Crack>1</Crack>
+        <Spallation>0</Spallation>
+        <Efflorescence>0</Efflorescence>
         <ExposedBars>0</ExposedBars>
         <CorrosionStain>0</CorrosionStain>
     </Defect>
-    <Defect name="image_0000028_crop_0000001.png">
+    <Defect name="image_0001188_crop_0000021.png">
+        <Background>0</Background>
+        <Crack>1</Crack>
+        <Spallation>1</Spallation>
+        <Efflorescence>0</Efflorescence>
+        <ExposedBars>0</ExposedBars>
+        <CorrosionStain>0</CorrosionStain>
+    </Defect>
+    <Defect name="image_0001251_crop_0000006.png">
         <Background>0</Background>
         <Crack>0</Crack>
-        <Spallation>0</Spallation>
-        <Efflorescence>1</Efflorescence>
-        <ExposedBars>0</ExposedBars>
+        <Spallation>1</Spallation>
+        <Efflorescence>0</Efflorescence>
+        <ExposedBars>1</ExposedBars>
         <CorrosionStain>1</CorrosionStain>
     </Defect>
-    <Defect name="image_0000034_crop_0000001.png">
-        <Background>0</Background>
-        <Crack>0</Crack>
-        <Spallation>0</Spallation>
-        <Efflorescence>1</Efflorescence>
-        <ExposedBars>0</ExposedBars>
-        <CorrosionStain>1</CorrosionStain>
-    </Defect>
-    <Counts Total="9">
-        <Crack>0</Crack>
-        <Spallation>0</Spallation>
-        <Background>0</Background>
-        <Efflorescence>5</Efflorescence>
-        <ExposedBars>0</ExposedBars>
-        <CorrosionStain>4</CorrosionStain>
-    </Counts>
 </Annotation>

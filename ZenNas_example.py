@@ -136,7 +136,7 @@ def show_attenttion(model, data):
 
     # Using the with statement ensures the context is freed, and you can
     # recreate different CAM objects in a loop.
-    cam_algorithm = methods["gradcam++"]
+    cam_algorithm = methods["gradcam"]
     with cam_algorithm(model=model,
                         target_layers=target_layers,
                         use_cuda=False) as cam:
@@ -147,8 +147,8 @@ def show_attenttion(model, data):
 
         grayscale_cam = cam(input_tensor=data,
                             target_category=target_category,
-                            aug_smooth=True,
-                            eigen_smooth=True)
+                            aug_smooth=False,
+                            eigen_smooth=False)
         
         # Here grayscale_cam has only one image in the batch
         grayscale_cam = grayscale_cam[0, :]
@@ -156,7 +156,7 @@ def show_attenttion(model, data):
         cam_image = show_cam_on_image(rgb_img, grayscale_cam, use_rgb=True)
 
         # cam_image is RGB encoded whereas "cv2.imwrite" requires BGR encoding.
-        cam_image = cv2.cvtColor(cam_image, cv2.COLOR_RGB2BGR)
+        # cam_image = cv2.cvtColor(cam_image, cv2.COLOR_RGB2BGR)
 
     gb_model = GuidedBackpropReLUModel(model=model, use_cuda= False)
     gb = gb_model(data, target_category=target_category)
