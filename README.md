@@ -20,7 +20,7 @@ Model evaluation results for multi-target and single-target scenarios. For each 
 Grad-CAM attention pattern in last convolutional layer. For more examples please refer to the Appendix in our report.
 
 ### Transfer Learning Experiment Results
-![convalutional attention](./tools/Transfer_Learning_Experiment.png)
+![convalutional attention](./tools/Transfer_Learning_Experiment.png)\
 Pretrained models use weights from ImageNet dataset then retrain in CODEBRIM dataset.
 
 ## File structure of our project
