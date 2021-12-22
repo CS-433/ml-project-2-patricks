@@ -14,7 +14,7 @@ To see a toy sample from our best trained model ZenNAS (75.6% multi-target accur
 ### Environment
 Our project require `pytorch >= 1.6`, `Tensorflow == 1.4`. Linux and MacOS systems are preferred (you may encounter a file-path problem using Windows.)
 
-Good news is we have packed all the environment in a docker file and upload it to dockerHub, you can find it [here](https://hub.docker.com/repository/docker/elenathfgs/pytorch1.6_cuda10.1_jupyter).
+Good news is **we have packed all the environment in a docker file and upload it to dockerHub**, you can find it [here](https://hub.docker.com/repository/docker/elenathfgs/pytorch1.6_cuda10.1_jupyter).
 
 ### Reproduce results for ENAS
 * To search for the models (i.e., ENAS-1, ENAS-2, ENAS-3) please refer to `NAS_designed_model/enas.ipynb`.
