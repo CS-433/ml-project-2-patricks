@@ -18,6 +18,11 @@ Model evaluation results for multi-target and single-target scenarios. For each 
 ### Attention Pattern of the Last Convolutional Layer
 ![convalutional attention](./tools/ablation.png)
 Grad-CAM attention pattern in last convolutional layer. For more examples please refer to the Appendix in our report.
+
+### Transfer Learning Experiment Results
+![convalutional attention](./tools/Transfer_Learning_Experiment.png)
+Pretrained models use weights from ImageNet dataset then retrain in CODEBRIM dataset.
+
 ## File structure of our project
 
 .\
@@ -87,11 +92,11 @@ Including model structure produced by ZenNas method and parameter weight files.
 - **`ZenNas_example.py`**:It includes functions for drawing and generating results in run_sample.ipynb.
 - **`copy_balance.ipynb`**:It is the over-sampling method to address the problem of class imbalance.
 - **`focal_loss.py`**:It implements focal loss to address the problem of class imbalance.
-- **`pytorch_grad_cam`**:It is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).
 - **`result_analysis.py`**:It summarizes results and analyzes comprehensively with the accuracy rate and the number of model parameters.
 
 ### `ref_codes`
 Reference code from github etc. Like the code from the original paper and ZenNas code.
+- **`pytorch_grad_cam`**:It is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).
 
 ### `train_log`
 It include almost all the training logs during our experiment as well as the tools to generate acc-loss curves during training.
