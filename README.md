@@ -12,7 +12,7 @@ In this repository, you can find our work for the Project 2 of the [Machine Lear
 
 ## File structure of our project
 
-.
+.\
 ├── NAS_designed_model\
 │   ├── EfficientNet_grid_search.ipynb\
 │   ├── enas.ipynb\
