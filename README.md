@@ -3,7 +3,7 @@
 In this repository, you can find our work for the Project 2 of the [Machine Learning](https://github.com/epfml/ML_course) at [EPFL](http://epfl.ch). We focus on the crack concrete classification problem as described [here](https://zenodo.org/record/2620293#.YZTqbr3MJqt), with the CODEBRIM dataset provided.
 
 ## A quick demo
-To see a toy sample from our best trained model ZenNAS (75.6% multi-target accuracy) to predict different concrete defect images, simply run `run_sample.ipynb`.
+To see a toy sample from our best trained model ZenNAS (75.6% multi-target accuracy) to predict different concrete defect images, simply run `run_sample.ipynb`. We have prepared the best weight (75.6%) for ZenNAS in this repo, you can directly use it at `model_scripts/hard_ZenNas_withPretrain.pth`.
 
 ## Reproduce the results
 
@@ -103,7 +103,7 @@ Notebook scripts for training models of [ResNet](https://pytorch.org/hub/pytorch
 
 - **`data_analysis.ipynb`**:It includes our code for analyzing data distribution and resolution.
 - **`datasets.py`**:To modify the transforms used in the dataloader, it includes 9 methods, such as RandomHorizontalFlip, RandomVerticalFlip, RandomRotation, RandomResizedCrop, RandomPerspective, GaussianBlur, RandomAdjustSharpness, random_select and normalize.
-- **`data_augmentation.ipynb`**:In the training framework, we get data from dataloader that we modify in `datasets.py`
+- **`data_augmentation.ipynb`**:In the training framework, we get data from dataloader that we modify in `datasets.py`.
 
 ### `model_scripts`
 
