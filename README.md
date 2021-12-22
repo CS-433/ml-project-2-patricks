@@ -71,8 +71,8 @@ Notebook scripts for training models of [ResNet](https://pytorch.org/hub/pytorch
 
 ### `Data Augmentation`
 
-*data_analysis.ipynb* includes our code for analyzing data distribution and resolution.
-*data_augmentation.ipynb* includes 9 methods that we used to transform the data, such as RandomHorizontalFlip, RandomVerticalFlip, RandomRotation, RandomResizedCrop, RandomPerspective, GaussianBlur, RandomAdjustSharpness, random_select, normalize.
+*data_analysis.ipynb* includes our code for analyzing data distribution and resolution.\
+*data_augmentation.ipynb* includes 9 methods that we used to transform the data, such as RandomHorizontalFlip, RandomVerticalFlip, RandomRotation, RandomResizedCrop, RandomPerspective, GaussianBlur, RandomAdjustSharpness, random_select, normalize.\
 *datasets.py* assists in reading data files.
 
 ### `model_scripts`
@@ -81,12 +81,12 @@ Including model structure produced by ZenNas method and parameter weight files.
 
 ### `tools`
 
-*NAS_result_analysis.ipynb* is used for analyzing the result of NAS like Agent Searching Reward.
-*ZenNas_example* includes functions for drawing and generating results in run_sample.ipynb.
-*copy_balance.ipynb* is over-sampling method to address the problem of class imbalance.
-*focal_loss.py* implements focal loss to address the problem of class imbalance.
-*pytorch_grad_cam* is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).
-*result_analysis* summarizes results and analyzes comprehensively with the accuracy rate and the number of model parameters.
+*NAS_result_analysis.ipynb* is used for analyzing the result of NAS like Agent Searching Reward.\
+*ZenNas_example* includes functions for drawing and generating results in run_sample.ipynb.\
+*copy_balance.ipynb* is over-sampling method to address the problem of class imbalance.\
+*focal_loss.py* implements focal loss to address the problem of class imbalance.\
+*pytorch_grad_cam* is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).\
+*result_analysis* summarizes results and analyzes comprehensively with the accuracy rate and the number of model parameters.\
 
 ### `ref_codes`
 
