@@ -29,6 +29,9 @@ Good news is we have packed all the environment in a docker file and upload it t
 ### Reproduce results for baseline models
 * Please refer to code in folder -- `expert_designed_model`.
 
+### Reproduce results for data processing and grid search, etc.
+* Please refer to codes in folder `/data_augmentation` and `NAS_designed_model/EfficientNet_grid_search.ipynb`. Other analysis files could be found at the folder `/tools`.
+
 
 ## Contribution
 
