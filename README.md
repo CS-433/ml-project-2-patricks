@@ -13,11 +13,11 @@ In this repository, you can find our work for the Project 2 of the [Machine Lear
 
 ### Ablation study of **Convolutional layer attention**
 
-![convalutional attention](./tools/ablation_study)
+![convalutional attention](./tools/ablation study.png)
 
 ### Result of transform learning
 
-![result](./tools/result)
+![result](./tools/result.png)
 
 ## File structure of our project
 
