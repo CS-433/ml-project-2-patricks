@@ -77,7 +77,7 @@ def get_random_sample():
     
     return data, label
     """
-    import datasets as DS
+    import tools.datasets as DS
     class Args:
       dataset_path = "./sample/"
       patch_size = 1

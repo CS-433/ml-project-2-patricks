@@ -17,7 +17,7 @@ from torch.autograd import Variable
 from model_search import Network
 from architect import Architect
 
-import datasets as DS
+import tools.datasets as DS
 from learning_rate_scheduling import LearningRateScheduler
 
 parser = argparse.ArgumentParser("cifar")
