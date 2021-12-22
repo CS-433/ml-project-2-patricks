@@ -95,6 +95,9 @@ def get_random_sample():
 
 
 def show_attenttion(model, data):
+    import os
+    import sys
+    sys.path.append(os.getcwd())
     from pytorch_grad_cam import GradCAM, \
     ScoreCAM, \
     GradCAMPlusPlus, \
