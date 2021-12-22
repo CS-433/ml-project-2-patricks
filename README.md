@@ -11,14 +11,15 @@ In this repository, you can find our work for the Project 2 of the [Machine Lear
 
 ## Result
 
+### Model evaluation Results
+
+![result](./tools/Model Evaluation Results.png)
+Model evaluation results for multi-target and single-target scenarios. For each model, we report the best validation result, as well as the corresponding training and testing accuracy at the same epoch. Models with † are searched on ImageNet dataset while models with (*) are obtained from data-free zero-shot search.
+
 ### Ablation study of **Convolutional layer attention**
 
 ![convalutional attention](./tools/ablation.png)
-
-### Result of transform learning
-
-![result](./tools/result.png)
-
+Grad-CAM attention pattern in last convolutional layer. For more examples please refer to the Appendix in our report.
 ## File structure of our project
 
 .\
