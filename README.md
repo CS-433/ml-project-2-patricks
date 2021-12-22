@@ -2,7 +2,7 @@
 
 # Machine Learning - Project 2 (Team: Patricks)
 ## Network Architecture Search and Expert Designed CNNs for Multi-target Concrete Defect Detection
----
+
 
 In this repository, you can find our work for the Project 2 of the [Machine Learning](https://github.com/epfml/ML_course) at [EPFL](http://epfl.ch). We focus on the crack concrete classification problem as described [here](https://zenodo.org/record/2620293#.YZTqbr3MJqt), with the CODEBRIM dataset provided.
 
