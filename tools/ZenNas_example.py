@@ -1,16 +1,4 @@
 import torch
-import torch.nn as nn
-import torch.optim as optim
-import crack_dataset as DS
-import copy
-import os
-import time
-import logging
-from tools.focal_loss import focal_binary_cross_entropy
-from torch.nn import BCEWithLogitsLoss
-
-
-
 def get_zennet(arch_path, num_classes, use_SE):
     """
     load the Zen-NAS searched model from stored arch planetext
