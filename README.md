@@ -5,6 +5,27 @@ In this repository, you can find our work for the Project 2 of the [Machine Lear
 ## Quick Sample Code
 To see a toy sample from our best trained model ZenNAS (75.6% multi-target accuracy) to predict different concrete defect images, simply run `run_sample.ipynb`.
 
+## Reproduce the results
+
+### Environment
+Our project require `pytorch >= 1.6`, `Tensorflow == 1.4`. Linux and MacOS systems are preferred (you may encounter a file-path problem using Windows.)
+
+Good news is we have packed all the environment in a docker file and upload it to dockerHub, you can find it [here](https://hub.docker.com/repository/docker/elenathfgs/pytorch1.6_cuda10.1_jupyter).
+
+### Reproduce results for ENAS
+* To search for the models (i.e., ENAS-1, ENAS-2, ENAS-3) please refer to `NAS_designed_model/enas.ipynb`.
+* To train the ENAS generated models, you need to mannually extract the architecture description in training log, please refer it [here](https://github.com/melodyguan/enas).
+
+### Reproduce results for EfficientNet
+* Please refer to the code in `NAS_designed_model/train_crack_efficientNet.ipynb`.
+
+### Reproduce results for ZenNAS
+* Please refer to the code in `NAS_designed_model/train_crack_zenNAS.ipynb`.
+
+### Reproduce results for baseline models
+* Please refer to code in folder -- `expert_designed_model`.
+
+
 ## Contribution
 
 1. We evaluate and compare expert designed and NAS generated CNN architectures for the multi-target concrete defect classification task, and obtain highly competitive result using ZenNAS with much less parameters compared to the expert-designed models.
@@ -99,7 +120,7 @@ Including model structure produced by ZenNas method and parameter weight files.
 All the reference codes from other repositories used by this project:
 - **`pytorch_grad_cam`**:It is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).
 - [**`ZenNAS`**](https://github.com/idstcv/ZenNAS):Code for ZenNAS search methods with imagenet-pretrained sample model path.  [Original Paper](https://arxiv.org/abs/2102.01063).
-- [**`ENAS`**](https://github.com/carpedm20/ENAS-pytorch):Code for ENAS search scripts. [Original Paper](https://arxiv.org/abs/1802.03268)
+- [**`ENAS`**](https://github.com/melodyguan/enas):Code for ENAS search scripts. [Original Paper](https://arxiv.org/abs/1802.03268)
 
 ### `train_log`
 It include almost all the training logs during our experiment as well as the tools to generate acc-loss curves during training.
