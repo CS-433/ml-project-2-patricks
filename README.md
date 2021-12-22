@@ -1,4 +1,4 @@
-![Patrick solves Cracks!!](https://www.google.com/url?sa=i&url=https%3A%2F%2Fpeople.com%2Ftv%2Fpatrick-gets-his-own-series-in-the-patrick-star-show%2F&psig=AOvVaw1Xf1Zm1kKTizolJsu8xDdp&ust=1640297573942000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC2lea2-PQCFQAAAAAdAAAAABAE)
+![Patrick solves Cracks!!](https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F06%2F01%2Fpatrick-star.jpg)
 # Machine Learning - Project 2 (Team: Patricks)
 
 In this repository, you can find our work for the Project 2 of the [Machine Learning](https://github.com/epfml/ML_course) at [EPFL](http://epfl.ch). We focus on the crack concrete classification problem as described [here](https://zenodo.org/record/2620293#.YZTqbr3MJqt), with the CODEBRIM dataset provided.
