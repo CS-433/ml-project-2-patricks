@@ -2,6 +2,8 @@
 
 In this repository, you can find our work for the Project 2 of the [Machine Learning](https://github.com/epfml/ML_course) at [EPFL](http://epfl.ch). We focus on the crack concrete classification problem as described [here](https://zenodo.org/record/2620293#.YZTqbr3MJqt), with the CODEBRIM dataset provided.
 
+## Quick Sample Code
+To see a toy sample from our best trained model ZenNAS (75.6% multi-target accuracy) to predict different concrete defect images.
 
 ## Contribution
 
@@ -52,7 +54,6 @@ Pretrained models use weights from ImageNet dataset then retrain in CODEBRIM dat
 │   ├── datasets.py\
 │   ├── focal_loss.py\
 │   ├── model_acc_param.csv\
-│   ├── pytorch_grad_cam\
 │   ├── result_analysis.ipynb\
 ├── README.md\
 ├── run_sample.ipynb\
@@ -95,8 +96,10 @@ Including model structure produced by ZenNas method and parameter weight files.
 - **`result_analysis.py`**:It summarizes results and analyzes comprehensively with the accuracy rate and the number of model parameters.
 
 ### `ref_codes`
-Reference code from github etc. Like the code from the original paper and ZenNas code.
+All the reference codes from other repositories used by this project:
 - **`pytorch_grad_cam`**:It is an adjusted python package implementing [Grad_Cam](http://gradcam.cloudcv.org/).
+- [**`ZenNAS`**](https://github.com/idstcv/ZenNAS):Code for ZenNAS search methods with imagenet-pretrained sample model path.  [Original Paper](https://arxiv.org/abs/2102.01063).
+- [**`ENAS`**](https://github.com/carpedm20/ENAS-pytorch):Code for ENAS search scripts. [Original Paper](https://arxiv.org/abs/1802.03268)
 
 ### `train_log`
 It include almost all the training logs during our experiment as well as the tools to generate acc-loss curves during training.
