@@ -4,7 +4,7 @@
 | **Network Architecture Search and Expert Designed CNNs for Multi-target Concrete Defect Detection**
 
 
-In this repository, you can find our work for the Project 2 of the [Machine Learning](https://github.com/epfml/ML_course) at [EPFL](http://epfl.ch). We focus on the crack concrete classification problem as described [here](https://zenodo.org/record/2620293#.YZTqbr3MJqt), with the CODEBRIM dataset provided.
+In this repository, you can find our work and corresponding report for the Project 2 of the [Machine Learning](https://github.com/epfml/ML_course) at [EPFL](http://epfl.ch). We focus on the crack concrete classification problem as described [here](https://zenodo.org/record/2620293#.YZTqbr3MJqt), with the CODEBRIM dataset provided.
 
 ## A quick demo
 To see a toy sample from our best trained model ZenNAS (75.6% multi-target accuracy) to predict different concrete defect images, simply run `run_sample.ipynb`. We have prepared the best weight (75.6%) for ZenNAS in this repo, you can directly use it at `model_scripts/hard_ZenNas_withPretrain.pth`. (the demo loads this weight by default)
@@ -84,6 +84,7 @@ Pretrained models use weights from ImageNet dataset then retrain in CODEBRIM dat
 │   ├── model_acc_param.csv\
 │   ├── result_analysis.ipynb\
 ├── README.md\
+├── P2_Report_Patricks.pdf\
 ├── run_sample.ipynb\
 ├── ref_codes\
 ├── cam_test\
