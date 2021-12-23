@@ -67,7 +67,7 @@ Pretrained models use weights from ImageNet dataset then retrain in CODEBRIM dat
 │   └── datasets.py\
 ├── expert_designed_model\
 │   ├── train_crack_resnet.ipynb\
-│   └── train_crack_vgg.ipynb\
+│   └── train_crack_vgg_AlexNet_DenseNet.ipynb\
 ├── model_scripts\
 │   ├── hard_ZenNas_withPretrain.pth\
 │   ├── hard_ZenNas_withoutPretrain.pth\
